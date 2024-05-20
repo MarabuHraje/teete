@@ -17,13 +17,4 @@ depends_on:
 image: wordpress:latest
 restart: always
 ports:
-- "8021:80"
-environment:
-WORDPRESS_DB_HOST: database:3306
-WORDPRESS_DB_USER: wpuser
-WORDPRESS_DB_PASSWORD: wppassword
-WORDPRESS_DB_NAME: wpdb
- 
-volumes:
-["./:/var/www/html"]
-volumes:
+- "25570"
